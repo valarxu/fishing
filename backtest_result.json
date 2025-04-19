@@ -1,0 +1,309 @@
+{
+  "initialCapital": 10000,
+  "finalValue": 10100,
+  "profit": 100,
+  "profitPercent": "1.00%",
+  "trades": [
+    {
+      "type": "买入",
+      "timestamp": "2025-04-16T05:20:00.000Z",
+      "price": "83293.45",
+      "amount": 1000,
+      "positions": 1
+    },
+    {
+      "type": "买入",
+      "timestamp": "2025-04-16T05:25:00.000Z",
+      "price": "83293.45",
+      "amount": 1000,
+      "positions": 2
+    },
+    {
+      "type": "买入",
+      "timestamp": "2025-04-16T05:30:00.000Z",
+      "price": "83293.45",
+      "amount": 1000,
+      "positions": 3
+    },
+    {
+      "type": "买入",
+      "timestamp": "2025-04-16T06:00:00.000Z",
+      "price": "83293.45",
+      "amount": 1000,
+      "positions": 4
+    },
+    {
+      "type": "买入",
+      "timestamp": "2025-04-16T06:05:00.000Z",
+      "price": "83293.45",
+      "amount": 1000,
+      "positions": 5
+    },
+    {
+      "type": "买入",
+      "timestamp": "2025-04-16T06:10:00.000Z",
+      "price": "83293.45",
+      "amount": 1000,
+      "positions": 6
+    },
+    {
+      "type": "买入",
+      "timestamp": "2025-04-16T08:00:00.000Z",
+      "price": "83293.45",
+      "amount": 1000,
+      "positions": 7
+    },
+    {
+      "type": "买入",
+      "timestamp": "2025-04-16T08:05:00.000Z",
+      "price": "83293.45",
+      "amount": 1000,
+      "positions": 8
+    },
+    {
+      "type": "买入",
+      "timestamp": "2025-04-16T08:10:00.000Z",
+      "price": "83293.45",
+      "amount": 1000,
+      "positions": 9
+    },
+    {
+      "type": "买入",
+      "timestamp": "2025-04-16T08:15:00.000Z",
+      "price": "83293.45",
+      "amount": 1000,
+      "positions": 10
+    },
+    {
+      "type": "卖出",
+      "timestamp": "2025-04-16T08:25:00.000Z",
+      "price": "83709.92",
+      "amount": 1000,
+      "positions": 9,
+      "profit": "5.00"
+    },
+    {
+      "type": "卖出",
+      "timestamp": "2025-04-16T08:30:00.000Z",
+      "price": "83709.92",
+      "amount": 1000,
+      "positions": 8,
+      "profit": "5.00"
+    },
+    {
+      "type": "卖出",
+      "timestamp": "2025-04-16T08:35:00.000Z",
+      "price": "83709.92",
+      "amount": 1000,
+      "positions": 7,
+      "profit": "5.00"
+    },
+    {
+      "type": "卖出",
+      "timestamp": "2025-04-16T08:40:00.000Z",
+      "price": "83709.92",
+      "amount": 1000,
+      "positions": 6,
+      "profit": "5.00"
+    },
+    {
+      "type": "卖出",
+      "timestamp": "2025-04-16T08:45:00.000Z",
+      "price": "83709.92",
+      "amount": 1000,
+      "positions": 5,
+      "profit": "5.00"
+    },
+    {
+      "type": "卖出",
+      "timestamp": "2025-04-16T08:50:00.000Z",
+      "price": "83709.92",
+      "amount": 1000,
+      "positions": 4,
+      "profit": "5.00"
+    },
+    {
+      "type": "卖出",
+      "timestamp": "2025-04-16T08:55:00.000Z",
+      "price": "83709.92",
+      "amount": 1000,
+      "positions": 3,
+      "profit": "5.00"
+    },
+    {
+      "type": "卖出",
+      "timestamp": "2025-04-16T09:00:00.000Z",
+      "price": "83709.92",
+      "amount": 1000,
+      "positions": 2,
+      "profit": "5.00"
+    },
+    {
+      "type": "卖出",
+      "timestamp": "2025-04-16T09:05:00.000Z",
+      "price": "83709.92",
+      "amount": 1000,
+      "positions": 1,
+      "profit": "5.00"
+    },
+    {
+      "type": "卖出",
+      "timestamp": "2025-04-16T09:10:00.000Z",
+      "price": "83709.92",
+      "amount": 1000,
+      "positions": 0,
+      "profit": "5.00"
+    },
+    {
+      "type": "买入",
+      "timestamp": "2025-04-16T17:30:00.000Z",
+      "price": "84877.85",
+      "amount": 1000,
+      "positions": 1
+    },
+    {
+      "type": "买入",
+      "timestamp": "2025-04-16T17:35:00.000Z",
+      "price": "84877.85",
+      "amount": 1000,
+      "positions": 2
+    },
+    {
+      "type": "买入",
+      "timestamp": "2025-04-16T17:40:00.000Z",
+      "price": "84877.85",
+      "amount": 1000,
+      "positions": 3
+    },
+    {
+      "type": "买入",
+      "timestamp": "2025-04-16T17:40:00.000Z",
+      "price": "84451.33",
+      "amount": 1000,
+      "positions": 4
+    },
+    {
+      "type": "买入",
+      "timestamp": "2025-04-16T17:45:00.000Z",
+      "price": "84877.85",
+      "amount": 1000,
+      "positions": 5
+    },
+    {
+      "type": "买入",
+      "timestamp": "2025-04-16T17:45:00.000Z",
+      "price": "84451.33",
+      "amount": 1000,
+      "positions": 6
+    },
+    {
+      "type": "买入",
+      "timestamp": "2025-04-16T17:45:00.000Z",
+      "price": "84024.80",
+      "amount": 1000,
+      "positions": 7
+    },
+    {
+      "type": "买入",
+      "timestamp": "2025-04-16T17:50:00.000Z",
+      "price": "84877.85",
+      "amount": 1000,
+      "positions": 8
+    },
+    {
+      "type": "买入",
+      "timestamp": "2025-04-16T17:50:00.000Z",
+      "price": "84451.33",
+      "amount": 1000,
+      "positions": 9
+    },
+    {
+      "type": "买入",
+      "timestamp": "2025-04-16T17:50:00.000Z",
+      "price": "84024.80",
+      "amount": 1000,
+      "positions": 10
+    },
+    {
+      "type": "卖出",
+      "timestamp": "2025-04-16T18:25:00.000Z",
+      "price": "84444.93",
+      "amount": 1000,
+      "positions": 9,
+      "profit": "5.00"
+    },
+    {
+      "type": "卖出",
+      "timestamp": "2025-04-16T19:50:00.000Z",
+      "price": "84444.93",
+      "amount": 1000,
+      "positions": 8,
+      "profit": "5.00"
+    },
+    {
+      "type": "卖出",
+      "timestamp": "2025-04-16T19:55:00.000Z",
+      "price": "84444.93",
+      "amount": 1000,
+      "positions": 7,
+      "profit": "5.00"
+    },
+    {
+      "type": "卖出",
+      "timestamp": "2025-04-16T20:00:00.000Z",
+      "price": "84444.93",
+      "amount": 1000,
+      "positions": 6,
+      "profit": "5.00"
+    },
+    {
+      "type": "卖出",
+      "timestamp": "2025-04-16T20:05:00.000Z",
+      "price": "84444.93",
+      "amount": 1000,
+      "positions": 5,
+      "profit": "5.00"
+    },
+    {
+      "type": "卖出",
+      "timestamp": "2025-04-16T20:15:00.000Z",
+      "price": "84444.93",
+      "amount": 1000,
+      "positions": 4,
+      "profit": "5.00"
+    },
+    {
+      "type": "卖出",
+      "timestamp": "2025-04-16T20:20:00.000Z",
+      "price": "84444.93",
+      "amount": 1000,
+      "positions": 3,
+      "profit": "5.00"
+    },
+    {
+      "type": "卖出",
+      "timestamp": "2025-04-16T20:25:00.000Z",
+      "price": "84444.93",
+      "amount": 1000,
+      "positions": 2,
+      "profit": "5.00"
+    },
+    {
+      "type": "卖出",
+      "timestamp": "2025-04-16T20:30:00.000Z",
+      "price": "84444.93",
+      "amount": 1000,
+      "positions": 1,
+      "profit": "5.00"
+    },
+    {
+      "type": "卖出",
+      "timestamp": "2025-04-16T20:35:00.000Z",
+      "price": "84444.93",
+      "amount": 1000,
+      "positions": 0,
+      "profit": "5.00"
+    }
+  ],
+  "remainingPositions": 0
+}
