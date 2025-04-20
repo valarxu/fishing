@@ -4,7 +4,7 @@ const path = require('path');
 // 读取K线数据
 function loadKlinesData() {
   try {
-    const filePath = path.join(__dirname, 'klines.json');
+    const filePath = path.join(__dirname, 'klines_historical.json');
     const data = fs.readFileSync(filePath, 'utf8');
     return JSON.parse(data);
   } catch (error) {
@@ -28,6 +28,9 @@ function runBacktest(klines) {
   let lastBuyPrice = 0; // 最后一次买入价格
   let referencePrice = 0; // 参考价格，用于计算涨跌幅
   
+  // 记录每个仓位的买入价格
+  const positionPrices = [];
+  
   // 交易记录
   const trades = [];
   
@@ -44,59 +47,53 @@ function runBacktest(klines) {
   for (let i = 1; i < klines.length; i++) {
     const currentKline = klines[i];
     const timestamp = currentKline[0];
-    const openPrice = parseFloat(currentKline[1]);
-    const highPrice = parseFloat(currentKline[2]);
-    const lowPrice = parseFloat(currentKline[3]);
     const closePrice = parseFloat(currentKline[4]);
     
-    // 计算当前K线内可能的最大跌幅和涨幅
-    const maxDropPercent = (referencePrice - lowPrice) / referencePrice;
-    const maxRisePercent = (highPrice - referencePrice) / referencePrice;
-    
-    // 检查是否满足开仓条件：价格下跌0.5%且仓位未满
-    if (maxDropPercent >= priceChangeThreshold && currentPositions < maxPositions) {
-      // 计算可以开的仓位数量
-      const positionsToOpen = Math.min(maxPositions - currentPositions, Math.floor(maxDropPercent / priceChangeThreshold));
+    // 检查是否满足开仓条件：收盘价低于标记价格的0.5%且仓位未满
+    if (closePrice <= referencePrice * (1 - priceChangeThreshold) && currentPositions < maxPositions) {
+      // 直接开仓一次
+      const buyPrice = closePrice; // 使用收盘价作为买入价格
       
       // 实际开仓
-      for (let j = 0; j < positionsToOpen; j++) {
-        const buyPrice = referencePrice * (1 - (j + 1) * priceChangeThreshold);
-        if (buyPrice >= lowPrice) { // 确保价格在K线范围内
-          currentPositions++;
-          totalInvested += positionSize;
-          lastBuyPrice = buyPrice;
-          
-          // 记录交易
-          trades.push({
-            type: '买入',
-            timestamp: new Date(timestamp).toISOString(),
-            price: buyPrice.toFixed(2),
-            amount: positionSize,
-            positions: currentPositions
-          });
-          
-          console.log(`买入: 价格=${buyPrice.toFixed(2)}, 金额=${positionSize}, 当前持仓=${currentPositions}`);
-        }
-      }
+      currentPositions++;
+      totalInvested += positionSize;
+      lastBuyPrice = buyPrice;
+      
+      // 记录这个仓位的买入价格
+      positionPrices.push(buyPrice);
+      
+      // 记录交易
+      trades.push({
+        type: '买入',
+        timestamp: new Date(timestamp).toISOString(),
+        price: buyPrice.toFixed(2),
+        amount: positionSize,
+        positions: currentPositions
+      });
+      
+      console.log(`买入: 价格=${buyPrice.toFixed(2)}, 金额=${positionSize}, 当前持仓=${currentPositions}`);
+      
+      // 开仓后立即更新参考价格为最后买入价格
+      referencePrice = buyPrice;
     }
     
-    // 检查是否满足平仓条件：价格上涨0.5%且有仓位
-    if (maxRisePercent >= priceChangeThreshold && currentPositions > 0) {
-      // 如果仓位已满，使用最后买入价格作为参考
-      const sellReferencePrice = currentPositions === maxPositions ? lastBuyPrice : referencePrice;
-      
-      // 计算可以平的仓位数量
-      const positionsToClose = Math.min(currentPositions, Math.floor(maxRisePercent / priceChangeThreshold));
-      
-      // 实际平仓
-      for (let j = 0; j < positionsToClose; j++) {
-        const sellPrice = sellReferencePrice * (1 + (j + 1) * priceChangeThreshold);
-        if (sellPrice <= highPrice) { // 确保价格在K线范围内
+    // 检查是否满足平仓条件：收盘价高于任一仓位买入价格的0.5%且有仓位
+    if (currentPositions > 0) {
+      // 检查每个仓位是否满足平仓条件
+      for (let j = 0; j < positionPrices.length; j++) {
+        const positionPrice = positionPrices[j];
+        
+        // 如果当前收盘价高于该仓位买入价格的0.5%，则平仓
+        if (closePrice >= positionPrice * (1 + priceChangeThreshold)) {
+          // 使用收盘价作为卖出价格
+          const sellPrice = closePrice;
+          
+          // 实际平仓（平掉这个仓位）
           currentPositions--;
           totalInvested -= positionSize;
           
           // 计算收益
-          const profit = positionSize * (sellPrice / lastBuyPrice - 1);
+          const profit = positionSize * (sellPrice / positionPrice - 1);
           totalValue += profit;
           
           // 记录交易
@@ -106,10 +103,20 @@ function runBacktest(klines) {
             price: sellPrice.toFixed(2),
             amount: positionSize,
             positions: currentPositions,
-            profit: profit.toFixed(2)
+            profit: profit.toFixed(2),
+            buyPrice: positionPrice.toFixed(2) // 记录对应的买入价格
           });
           
-          console.log(`卖出: 价格=${sellPrice.toFixed(2)}, 金额=${positionSize}, 收益=${profit.toFixed(2)}, 当前持仓=${currentPositions}`);
+          console.log(`卖出: 价格=${sellPrice.toFixed(2)}, 买入价=${positionPrice.toFixed(2)}, 金额=${positionSize}, 收益=${profit.toFixed(2)}, 当前持仓=${currentPositions}`);
+          
+          // 从仓位价格数组中移除这个仓位
+          positionPrices.splice(j, 1);
+          
+          // 由于我们已经移除了一个元素，需要调整索引
+          j--;
+          
+          // 一次只平一个仓位，找到满足条件的第一个仓位后就退出循环
+          break;
         }
       }
     }
@@ -127,7 +134,13 @@ function runBacktest(klines) {
   // 计算最终资产（未平仓的按最后一根K线的收盘价计算）
   if (currentPositions > 0) {
     const lastClosePrice = parseFloat(klines[klines.length - 1][4]);
-    const unrealizedProfit = currentPositions * positionSize * (lastClosePrice / lastBuyPrice - 1);
+    let unrealizedProfit = 0;
+    
+    // 计算每个未平仓仓位的未实现收益
+    for (const positionPrice of positionPrices) {
+      unrealizedProfit += positionSize * (lastClosePrice / positionPrice - 1);
+    }
+    
     totalValue += unrealizedProfit;
     
     console.log(`未平仓持仓: ${currentPositions}, 按最新价格计算的未实现收益: ${unrealizedProfit.toFixed(2)}`);

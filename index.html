@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K线数据分析</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 使用特定版本(3.8.0)的LightweightCharts库 -->
+    <script src="https://cdn.jsdelivr.net/npm/lightweight-charts@3.8.0/dist/lightweight-charts.standalone.production.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>BTC/USDT K线图表与交易记录</h1>
+        
+        <div class="chart-container">
+            <div id="chart"></div>
+        </div>
+        
+        <div class="stats-container">
+            <div class="stats">
+                <h2>回测统计</h2>
+                <div id="backtest-stats"></div>
+            </div>
+        </div>
+        
+        <div class="pagination">
+            <button id="prev-page" disabled>上一页</button>
+            <span id="page-info">第1页</span>
+            <button id="next-page">下一页</button>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html> 
