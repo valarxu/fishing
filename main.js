@@ -3,7 +3,7 @@ let allKlines = []; // 所有K线数据
 let backtestResult = {}; // 回测结果数据
 let trades = []; // 交易数据
 let currentPage = 1; // 当前页码
-const klinesPerPage = 300; // 每页显示的K线数量
+const klinesPerPage = 3000; // 每页显示的K线数量
 let chart; // 图表实例
 let candleSeries; // K线系列
 
