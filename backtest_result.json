@@ -1,29 +1,32 @@
 {
   "initialCapital": 10000,
-  "finalValue": 10740.355795035679,
-  "profit": 740.355795035679,
-  "profitPercent": "7.40%",
+  "finalValue": 10747.040248196163,
+  "profit": 747.0402481961628,
+  "profitPercent": "7.47%",
   "trades": [
     {
       "type": "买入",
       "timestamp": "2024-12-18T01:50:00.000Z",
       "price": "105122.16",
       "amount": 1000,
-      "positions": 1
+      "positions": 1,
+      "expectedSellPrice": "105647.77"
     },
     {
       "type": "买入",
       "timestamp": "2024-12-18T04:00:00.000Z",
       "price": "104504.63",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "105027.15"
     },
     {
       "type": "买入",
       "timestamp": "2024-12-18T04:30:00.000Z",
       "price": "103895.99",
       "amount": 1000,
-      "positions": 3
+      "positions": 3,
+      "expectedSellPrice": "104415.47"
     },
     {
       "type": "卖出",
@@ -48,35 +51,40 @@
       "timestamp": "2024-12-18T19:45:00.000Z",
       "price": "103361.42",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "103878.23"
     },
     {
       "type": "买入",
       "timestamp": "2024-12-18T19:55:00.000Z",
       "price": "102817.82",
       "amount": 1000,
-      "positions": 3
+      "positions": 3,
+      "expectedSellPrice": "103331.91"
     },
     {
       "type": "买入",
       "timestamp": "2024-12-18T20:00:00.000Z",
       "price": "102260.46",
       "amount": 1000,
-      "positions": 4
+      "positions": 4,
+      "expectedSellPrice": "102771.76"
     },
     {
       "type": "买入",
       "timestamp": "2024-12-18T20:15:00.000Z",
       "price": "101256.54",
       "amount": 1000,
-      "positions": 5
+      "positions": 5,
+      "expectedSellPrice": "101762.82"
     },
     {
       "type": "买入",
       "timestamp": "2024-12-18T20:40:00.000Z",
       "price": "100373.21",
       "amount": 1000,
-      "positions": 6
+      "positions": 6,
+      "expectedSellPrice": "100875.08"
     },
     {
       "type": "卖出",
@@ -101,14 +109,16 @@
       "timestamp": "2024-12-19T01:55:00.000Z",
       "price": "99768.97",
       "amount": 1000,
-      "positions": 5
+      "positions": 5,
+      "expectedSellPrice": "100267.81"
     },
     {
       "type": "买入",
       "timestamp": "2024-12-19T02:10:00.000Z",
       "price": "99143.99",
       "amount": 1000,
-      "positions": 6
+      "positions": 6,
+      "expectedSellPrice": "99639.71"
     },
     {
       "type": "卖出",
@@ -133,14 +143,16 @@
       "timestamp": "2024-12-19T17:45:00.000Z",
       "price": "98563.71",
       "amount": 1000,
-      "positions": 5
+      "positions": 5,
+      "expectedSellPrice": "99056.53"
     },
     {
       "type": "买入",
       "timestamp": "2024-12-19T17:50:00.000Z",
       "price": "97849.39",
       "amount": 1000,
-      "positions": 6
+      "positions": 6,
+      "expectedSellPrice": "98338.64"
     },
     {
       "type": "卖出",
@@ -156,7 +168,8 @@
       "timestamp": "2024-12-19T18:20:00.000Z",
       "price": "97355.89",
       "amount": 1000,
-      "positions": 6
+      "positions": 6,
+      "expectedSellPrice": "97842.67"
     },
     {
       "type": "卖出",
@@ -172,14 +185,16 @@
       "timestamp": "2024-12-19T19:45:00.000Z",
       "price": "96825.54",
       "amount": 1000,
-      "positions": 6
+      "positions": 6,
+      "expectedSellPrice": "97309.67"
     },
     {
       "type": "买入",
       "timestamp": "2024-12-19T20:05:00.000Z",
       "price": "96222.01",
       "amount": 1000,
-      "positions": 7
+      "positions": 7,
+      "expectedSellPrice": "96703.12"
     },
     {
       "type": "卖出",
@@ -204,14 +219,16 @@
       "timestamp": "2024-12-20T08:45:00.000Z",
       "price": "95724.00",
       "amount": 1000,
-      "positions": 6
+      "positions": 6,
+      "expectedSellPrice": "96202.62"
     },
     {
       "type": "买入",
       "timestamp": "2024-12-20T09:05:00.000Z",
       "price": "95054.39",
       "amount": 1000,
-      "positions": 7
+      "positions": 7,
+      "expectedSellPrice": "95529.66"
     },
     {
       "type": "卖出",
@@ -227,14 +244,16 @@
       "timestamp": "2024-12-20T10:05:00.000Z",
       "price": "94555.74",
       "amount": 1000,
-      "positions": 7
+      "positions": 7,
+      "expectedSellPrice": "95028.52"
     },
     {
       "type": "买入",
       "timestamp": "2024-12-20T10:10:00.000Z",
       "price": "94002.85",
       "amount": 1000,
-      "positions": 8
+      "positions": 8,
+      "expectedSellPrice": "94472.86"
     },
     {
       "type": "卖出",
@@ -250,14 +269,16 @@
       "timestamp": "2024-12-20T11:30:00.000Z",
       "price": "93147.35",
       "amount": 1000,
-      "positions": 8
+      "positions": 8,
+      "expectedSellPrice": "93613.09"
     },
     {
       "type": "买入",
       "timestamp": "2024-12-20T12:00:00.000Z",
       "price": "92611.97",
       "amount": 1000,
-      "positions": 9
+      "positions": 9,
+      "expectedSellPrice": "93075.03"
     },
     {
       "type": "卖出",
@@ -309,7 +330,8 @@
       "timestamp": "2024-12-30T14:55:00.000Z",
       "price": "91883.99",
       "amount": 1000,
-      "positions": 5
+      "positions": 5,
+      "expectedSellPrice": "92343.41"
     },
     {
       "type": "卖出",
@@ -325,7 +347,8 @@
       "timestamp": "2025-01-09T20:20:00.000Z",
       "price": "91358.90",
       "amount": 1000,
-      "positions": 5
+      "positions": 5,
+      "expectedSellPrice": "91815.69"
     },
     {
       "type": "卖出",
@@ -341,7 +364,8 @@
       "timestamp": "2025-01-13T11:55:00.000Z",
       "price": "90851.22",
       "amount": 1000,
-      "positions": 5
+      "positions": 5,
+      "expectedSellPrice": "91305.48"
     },
     {
       "type": "卖出",
@@ -357,7 +381,8 @@
       "timestamp": "2025-01-13T14:30:00.000Z",
       "price": "89968.00",
       "amount": 1000,
-      "positions": 5
+      "positions": 5,
+      "expectedSellPrice": "90417.84"
     },
     {
       "type": "卖出",
@@ -409,7 +434,8 @@
       "timestamp": "2025-01-18T05:55:00.000Z",
       "price": "102829.27",
       "amount": 1000,
-      "positions": 1
+      "positions": 1,
+      "expectedSellPrice": "103343.42"
     },
     {
       "type": "卖出",
@@ -425,7 +451,8 @@
       "timestamp": "2025-01-19T21:25:00.000Z",
       "price": "104389.99",
       "amount": 1000,
-      "positions": 1
+      "positions": 1,
+      "expectedSellPrice": "104911.94"
     },
     {
       "type": "卖出",
@@ -441,7 +468,8 @@
       "timestamp": "2025-01-19T22:00:00.000Z",
       "price": "103084.52",
       "amount": 1000,
-      "positions": 1
+      "positions": 1,
+      "expectedSellPrice": "103599.94"
     },
     {
       "type": "卖出",
@@ -457,14 +485,16 @@
       "timestamp": "2025-01-19T22:35:00.000Z",
       "price": "103104.52",
       "amount": 1000,
-      "positions": 1
+      "positions": 1,
+      "expectedSellPrice": "103620.04"
     },
     {
       "type": "买入",
       "timestamp": "2025-01-19T22:45:00.000Z",
       "price": "102051.89",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "102562.15"
     },
     {
       "type": "卖出",
@@ -480,14 +510,16 @@
       "timestamp": "2025-01-19T23:05:00.000Z",
       "price": "101540.01",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "102047.71"
     },
     {
       "type": "买入",
       "timestamp": "2025-01-19T23:15:00.000Z",
       "price": "100551.86",
       "amount": 1000,
-      "positions": 3
+      "positions": 3,
+      "expectedSellPrice": "101054.62"
     },
     {
       "type": "卖出",
@@ -503,7 +535,8 @@
       "timestamp": "2025-01-19T23:35:00.000Z",
       "price": "99667.16",
       "amount": 1000,
-      "positions": 3
+      "positions": 3,
+      "expectedSellPrice": "100165.50"
     },
     {
       "type": "卖出",
@@ -537,7 +570,8 @@
       "timestamp": "2025-01-20T06:55:00.000Z",
       "price": "107486.50",
       "amount": 1000,
-      "positions": 1
+      "positions": 1,
+      "expectedSellPrice": "108023.93"
     },
     {
       "type": "卖出",
@@ -553,21 +587,24 @@
       "timestamp": "2025-01-20T07:15:00.000Z",
       "price": "108345.02",
       "amount": 1000,
-      "positions": 1
+      "positions": 1,
+      "expectedSellPrice": "108886.75"
     },
     {
       "type": "买入",
       "timestamp": "2025-01-20T07:45:00.000Z",
       "price": "107733.64",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "108272.31"
     },
     {
       "type": "买入",
       "timestamp": "2025-01-20T07:55:00.000Z",
       "price": "107120.65",
       "amount": 1000,
-      "positions": 3
+      "positions": 3,
+      "expectedSellPrice": "107656.25"
     },
     {
       "type": "卖出",
@@ -601,14 +638,16 @@
       "timestamp": "2025-01-20T12:10:00.000Z",
       "price": "107373.15",
       "amount": 1000,
-      "positions": 1
+      "positions": 1,
+      "expectedSellPrice": "107910.02"
     },
     {
       "type": "买入",
       "timestamp": "2025-01-20T12:15:00.000Z",
       "price": "106060.20",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "106590.50"
     },
     {
       "type": "卖出",
@@ -633,14 +672,16 @@
       "timestamp": "2025-01-20T15:45:00.000Z",
       "price": "105815.68",
       "amount": 1000,
-      "positions": 1
+      "positions": 1,
+      "expectedSellPrice": "106344.76"
     },
     {
       "type": "买入",
       "timestamp": "2025-01-20T15:55:00.000Z",
       "price": "104957.99",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "105482.78"
     },
     {
       "type": "卖出",
@@ -665,7 +706,8 @@
       "timestamp": "2025-01-20T17:00:00.000Z",
       "price": "104468.72",
       "amount": 1000,
-      "positions": 1
+      "positions": 1,
+      "expectedSellPrice": "104991.06"
     },
     {
       "type": "卖出",
@@ -681,7 +723,8 @@
       "timestamp": "2025-01-20T17:10:00.000Z",
       "price": "104231.73",
       "amount": 1000,
-      "positions": 1
+      "positions": 1,
+      "expectedSellPrice": "104752.89"
     },
     {
       "type": "卖出",
@@ -697,21 +740,24 @@
       "timestamp": "2025-01-20T17:25:00.000Z",
       "price": "104176.54",
       "amount": 1000,
-      "positions": 1
+      "positions": 1,
+      "expectedSellPrice": "104697.42"
     },
     {
       "type": "买入",
       "timestamp": "2025-01-20T17:35:00.000Z",
       "price": "101672.20",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "102180.56"
     },
     {
       "type": "买入",
       "timestamp": "2025-01-20T17:40:00.000Z",
       "price": "100786.25",
       "amount": 1000,
-      "positions": 3
+      "positions": 3,
+      "expectedSellPrice": "101290.18"
     },
     {
       "type": "卖出",
@@ -719,8 +765,8 @@
       "price": "102261.52",
       "amount": 1000,
       "positions": 2,
-      "profit": "5.80",
-      "buyPrice": "101672.20"
+      "profit": "14.64",
+      "buyPrice": "100786.25"
     },
     {
       "type": "卖出",
@@ -728,8 +774,8 @@
       "price": "104380.06",
       "amount": 1000,
       "positions": 1,
-      "profit": "35.66",
-      "buyPrice": "100786.25"
+      "profit": "26.63",
+      "buyPrice": "101672.20"
     },
     {
       "type": "卖出",
@@ -745,21 +791,24 @@
       "timestamp": "2025-01-21T14:30:00.000Z",
       "price": "104246.35",
       "amount": 1000,
-      "positions": 1
+      "positions": 1,
+      "expectedSellPrice": "104767.58"
     },
     {
       "type": "买入",
       "timestamp": "2025-01-21T14:35:00.000Z",
       "price": "103487.68",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "104005.12"
     },
     {
       "type": "买入",
       "timestamp": "2025-01-21T15:00:00.000Z",
       "price": "102941.70",
       "amount": 1000,
-      "positions": 3
+      "positions": 3,
+      "expectedSellPrice": "103456.41"
     },
     {
       "type": "卖出",
@@ -793,7 +842,8 @@
       "timestamp": "2025-01-21T16:25:00.000Z",
       "price": "105412.85",
       "amount": 1000,
-      "positions": 1
+      "positions": 1,
+      "expectedSellPrice": "105939.91"
     },
     {
       "type": "卖出",
@@ -809,14 +859,16 @@
       "timestamp": "2025-01-21T20:30:00.000Z",
       "price": "106380.47",
       "amount": 1000,
-      "positions": 1
+      "positions": 1,
+      "expectedSellPrice": "106912.37"
     },
     {
       "type": "买入",
       "timestamp": "2025-01-21T23:00:00.000Z",
       "price": "105482.56",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "106009.97"
     },
     {
       "type": "卖出",
@@ -832,7 +884,8 @@
       "timestamp": "2025-01-22T08:20:00.000Z",
       "price": "104863.88",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "105388.20"
     },
     {
       "type": "卖出",
@@ -848,7 +901,8 @@
       "timestamp": "2025-01-22T13:50:00.000Z",
       "price": "104067.28",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "104587.62"
     },
     {
       "type": "卖出",
@@ -864,7 +918,8 @@
       "timestamp": "2025-01-22T16:40:00.000Z",
       "price": "103437.96",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "103955.15"
     },
     {
       "type": "卖出",
@@ -880,14 +935,16 @@
       "timestamp": "2025-01-23T01:45:00.000Z",
       "price": "102862.18",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "103376.49"
     },
     {
       "type": "买入",
       "timestamp": "2025-01-23T02:15:00.000Z",
       "price": "102150.01",
       "amount": 1000,
-      "positions": 3
+      "positions": 3,
+      "expectedSellPrice": "102660.76"
     },
     {
       "type": "卖出",
@@ -903,7 +960,8 @@
       "timestamp": "2025-01-23T04:35:00.000Z",
       "price": "101610.75",
       "amount": 1000,
-      "positions": 3
+      "positions": 3,
+      "expectedSellPrice": "102118.80"
     },
     {
       "type": "卖出",
@@ -937,14 +995,16 @@
       "timestamp": "2025-01-27T07:15:00.000Z",
       "price": "98397.83",
       "amount": 1000,
-      "positions": 1
+      "positions": 1,
+      "expectedSellPrice": "98889.82"
     },
     {
       "type": "买入",
       "timestamp": "2025-01-27T07:25:00.000Z",
       "price": "97808.10",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "98297.14"
     },
     {
       "type": "卖出",
@@ -969,14 +1029,16 @@
       "timestamp": "2025-01-27T13:15:00.000Z",
       "price": "101102.58",
       "amount": 1000,
-      "positions": 1
+      "positions": 1,
+      "expectedSellPrice": "101608.09"
     },
     {
       "type": "买入",
       "timestamp": "2025-01-27T13:45:00.000Z",
       "price": "100466.97",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "100969.30"
     },
     {
       "type": "卖出",
@@ -1001,7 +1063,8 @@
       "timestamp": "2025-01-27T15:15:00.000Z",
       "price": "100940.40",
       "amount": 1000,
-      "positions": 1
+      "positions": 1,
+      "expectedSellPrice": "101445.10"
     },
     {
       "type": "卖出",
@@ -1017,14 +1080,16 @@
       "timestamp": "2025-01-27T16:35:00.000Z",
       "price": "99747.80",
       "amount": 1000,
-      "positions": 1
+      "positions": 1,
+      "expectedSellPrice": "100246.54"
     },
     {
       "type": "买入",
       "timestamp": "2025-01-27T17:20:00.000Z",
       "price": "99244.01",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "99740.23"
     },
     {
       "type": "卖出",
@@ -1049,14 +1114,16 @@
       "timestamp": "2025-01-29T19:00:00.000Z",
       "price": "102176.49",
       "amount": 1000,
-      "positions": 1
+      "positions": 1,
+      "expectedSellPrice": "102687.37"
     },
     {
       "type": "买入",
       "timestamp": "2025-01-29T19:15:00.000Z",
       "price": "101564.01",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "102071.83"
     },
     {
       "type": "卖出",
@@ -1081,7 +1148,8 @@
       "timestamp": "2025-01-29T20:00:00.000Z",
       "price": "102885.99",
       "amount": 1000,
-      "positions": 1
+      "positions": 1,
+      "expectedSellPrice": "103400.42"
     },
     {
       "type": "卖出",
@@ -1097,14 +1165,16 @@
       "timestamp": "2025-02-02T03:05:00.000Z",
       "price": "100166.00",
       "amount": 1000,
-      "positions": 1
+      "positions": 1,
+      "expectedSellPrice": "100666.83"
     },
     {
       "type": "买入",
       "timestamp": "2025-02-02T03:25:00.000Z",
       "price": "99612.00",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "100110.06"
     },
     {
       "type": "卖出",
@@ -1120,14 +1190,16 @@
       "timestamp": "2025-02-02T11:20:00.000Z",
       "price": "99111.67",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "99607.23"
     },
     {
       "type": "买入",
       "timestamp": "2025-02-02T12:30:00.000Z",
       "price": "98604.02",
       "amount": 1000,
-      "positions": 3
+      "positions": 3,
+      "expectedSellPrice": "99097.04"
     },
     {
       "type": "卖出",
@@ -1143,14 +1215,16 @@
       "timestamp": "2025-02-02T17:20:00.000Z",
       "price": "97753.18",
       "amount": 1000,
-      "positions": 3
+      "positions": 3,
+      "expectedSellPrice": "98241.95"
     },
     {
       "type": "买入",
       "timestamp": "2025-02-02T17:55:00.000Z",
       "price": "97228.85",
       "amount": 1000,
-      "positions": 4
+      "positions": 4,
+      "expectedSellPrice": "97714.99"
     },
     {
       "type": "卖出",
@@ -1175,7 +1249,8 @@
       "timestamp": "2025-02-03T00:15:00.000Z",
       "price": "96582.67",
       "amount": 1000,
-      "positions": 3
+      "positions": 3,
+      "expectedSellPrice": "97065.58"
     },
     {
       "type": "卖出",
@@ -1191,7 +1266,8 @@
       "timestamp": "2025-02-03T00:40:00.000Z",
       "price": "95694.54",
       "amount": 1000,
-      "positions": 3
+      "positions": 3,
+      "expectedSellPrice": "96173.01"
     },
     {
       "type": "卖出",
@@ -1207,28 +1283,32 @@
       "timestamp": "2025-02-03T01:20:00.000Z",
       "price": "95185.49",
       "amount": 1000,
-      "positions": 3
+      "positions": 3,
+      "expectedSellPrice": "95661.42"
     },
     {
       "type": "买入",
       "timestamp": "2025-02-03T01:35:00.000Z",
       "price": "94569.05",
       "amount": 1000,
-      "positions": 4
+      "positions": 4,
+      "expectedSellPrice": "95041.90"
     },
     {
       "type": "买入",
       "timestamp": "2025-02-03T01:45:00.000Z",
       "price": "93359.99",
       "amount": 1000,
-      "positions": 5
+      "positions": 5,
+      "expectedSellPrice": "93826.79"
     },
     {
       "type": "买入",
       "timestamp": "2025-02-03T01:50:00.000Z",
       "price": "92639.67",
       "amount": 1000,
-      "positions": 6
+      "positions": 6,
+      "expectedSellPrice": "93102.87"
     },
     {
       "type": "卖出",
@@ -1289,7 +1369,8 @@
       "timestamp": "2025-02-03T20:05:00.000Z",
       "price": "101148.00",
       "amount": 1000,
-      "positions": 1
+      "positions": 1,
+      "expectedSellPrice": "101653.74"
     },
     {
       "type": "卖出",
@@ -1305,14 +1386,16 @@
       "timestamp": "2025-02-04T05:00:00.000Z",
       "price": "99508.44",
       "amount": 1000,
-      "positions": 1
+      "positions": 1,
+      "expectedSellPrice": "100005.98"
     },
     {
       "type": "买入",
       "timestamp": "2025-02-04T05:15:00.000Z",
       "price": "98680.98",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "99174.38"
     },
     {
       "type": "卖出",
@@ -1328,7 +1411,8 @@
       "timestamp": "2025-02-04T08:35:00.000Z",
       "price": "98071.44",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "98561.80"
     },
     {
       "type": "卖出",
@@ -1353,14 +1437,16 @@
       "timestamp": "2025-02-04T15:10:00.000Z",
       "price": "99207.32",
       "amount": 1000,
-      "positions": 1
+      "positions": 1,
+      "expectedSellPrice": "99703.36"
     },
     {
       "type": "买入",
       "timestamp": "2025-02-04T15:15:00.000Z",
       "price": "98688.71",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "99182.15"
     },
     {
       "type": "卖出",
@@ -1385,21 +1471,24 @@
       "timestamp": "2025-02-04T19:45:00.000Z",
       "price": "99586.25",
       "amount": 1000,
-      "positions": 1
+      "positions": 1,
+      "expectedSellPrice": "100084.18"
     },
     {
       "type": "买入",
       "timestamp": "2025-02-04T19:50:00.000Z",
       "price": "98991.36",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "99486.32"
     },
     {
       "type": "买入",
       "timestamp": "2025-02-04T20:15:00.000Z",
       "price": "98454.22",
       "amount": 1000,
-      "positions": 3
+      "positions": 3,
+      "expectedSellPrice": "98946.49"
     },
     {
       "type": "卖出",
@@ -1415,21 +1504,24 @@
       "timestamp": "2025-02-04T21:20:00.000Z",
       "price": "97665.18",
       "amount": 1000,
-      "positions": 3
+      "positions": 3,
+      "expectedSellPrice": "98153.51"
     },
     {
       "type": "买入",
       "timestamp": "2025-02-04T21:30:00.000Z",
       "price": "97155.04",
       "amount": 1000,
-      "positions": 4
+      "positions": 4,
+      "expectedSellPrice": "97640.82"
     },
     {
       "type": "买入",
       "timestamp": "2025-02-04T21:55:00.000Z",
       "price": "96514.47",
       "amount": 1000,
-      "positions": 5
+      "positions": 5,
+      "expectedSellPrice": "96997.04"
     },
     {
       "type": "卖出",
@@ -1463,7 +1555,8 @@
       "timestamp": "2025-02-06T19:40:00.000Z",
       "price": "95995.37",
       "amount": 1000,
-      "positions": 3
+      "positions": 3,
+      "expectedSellPrice": "96475.35"
     },
     {
       "type": "卖出",
@@ -1488,14 +1581,16 @@
       "timestamp": "2025-02-09T21:35:00.000Z",
       "price": "95489.96",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "95967.41"
     },
     {
       "type": "买入",
       "timestamp": "2025-02-09T21:45:00.000Z",
       "price": "94880.86",
       "amount": 1000,
-      "positions": 3
+      "positions": 3,
+      "expectedSellPrice": "95355.26"
     },
     {
       "type": "卖出",
@@ -1520,7 +1615,8 @@
       "timestamp": "2025-02-12T13:35:00.000Z",
       "price": "94200.01",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "94671.01"
     },
     {
       "type": "卖出",
@@ -1536,7 +1632,8 @@
       "timestamp": "2025-02-18T18:45:00.000Z",
       "price": "93618.40",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "94086.49"
     },
     {
       "type": "卖出",
@@ -1552,28 +1649,32 @@
       "timestamp": "2025-02-24T22:40:00.000Z",
       "price": "93135.00",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "93600.67"
     },
     {
       "type": "买入",
       "timestamp": "2025-02-24T22:45:00.000Z",
       "price": "92637.53",
       "amount": 1000,
-      "positions": 3
+      "positions": 3,
+      "expectedSellPrice": "93100.72"
     },
     {
       "type": "买入",
       "timestamp": "2025-02-24T23:25:00.000Z",
       "price": "92034.77",
       "amount": 1000,
-      "positions": 4
+      "positions": 4,
+      "expectedSellPrice": "92494.94"
     },
     {
       "type": "买入",
       "timestamp": "2025-02-24T23:50:00.000Z",
       "price": "91453.65",
       "amount": 1000,
-      "positions": 5
+      "positions": 5,
+      "expectedSellPrice": "91910.92"
     },
     {
       "type": "卖出",
@@ -1598,28 +1699,32 @@
       "timestamp": "2025-02-25T07:05:00.000Z",
       "price": "90938.05",
       "amount": 1000,
-      "positions": 4
+      "positions": 4,
+      "expectedSellPrice": "91392.74"
     },
     {
       "type": "买入",
       "timestamp": "2025-02-25T07:10:00.000Z",
       "price": "90383.97",
       "amount": 1000,
-      "positions": 5
+      "positions": 5,
+      "expectedSellPrice": "90835.89"
     },
     {
       "type": "买入",
       "timestamp": "2025-02-25T07:20:00.000Z",
       "price": "89670.00",
       "amount": 1000,
-      "positions": 6
+      "positions": 6,
+      "expectedSellPrice": "90118.35"
     },
     {
       "type": "买入",
       "timestamp": "2025-02-25T07:30:00.000Z",
       "price": "89000.00",
       "amount": 1000,
-      "positions": 7
+      "positions": 7,
+      "expectedSellPrice": "89445.00"
     },
     {
       "type": "卖出",
@@ -1635,7 +1740,8 @@
       "timestamp": "2025-02-25T09:55:00.000Z",
       "price": "88303.73",
       "amount": 1000,
-      "positions": 7
+      "positions": 7,
+      "expectedSellPrice": "88745.25"
     },
     {
       "type": "卖出",
@@ -1651,14 +1757,16 @@
       "timestamp": "2025-02-25T10:10:00.000Z",
       "price": "87746.64",
       "amount": 1000,
-      "positions": 7
+      "positions": 7,
+      "expectedSellPrice": "88185.37"
     },
     {
       "type": "买入",
       "timestamp": "2025-02-25T10:20:00.000Z",
       "price": "87198.36",
       "amount": 1000,
-      "positions": 8
+      "positions": 8,
+      "expectedSellPrice": "87634.35"
     },
     {
       "type": "卖出",
@@ -1683,7 +1791,8 @@
       "timestamp": "2025-02-25T15:15:00.000Z",
       "price": "86620.88",
       "amount": 1000,
-      "positions": 7
+      "positions": 7,
+      "expectedSellPrice": "87053.98"
     },
     {
       "type": "卖出",
@@ -1699,7 +1808,8 @@
       "timestamp": "2025-02-26T14:20:00.000Z",
       "price": "85577.54",
       "amount": 1000,
-      "positions": 7
+      "positions": 7,
+      "expectedSellPrice": "86005.43"
     },
     {
       "type": "卖出",
@@ -1715,14 +1825,16 @@
       "timestamp": "2025-02-26T18:30:00.000Z",
       "price": "85088.00",
       "amount": 1000,
-      "positions": 7
+      "positions": 7,
+      "expectedSellPrice": "85513.44"
     },
     {
       "type": "买入",
       "timestamp": "2025-02-26T18:35:00.000Z",
       "price": "83560.93",
       "amount": 1000,
-      "positions": 8
+      "positions": 8,
+      "expectedSellPrice": "83978.73"
     },
     {
       "type": "卖出",
@@ -1738,7 +1850,8 @@
       "timestamp": "2025-02-26T20:15:00.000Z",
       "price": "82330.31",
       "amount": 1000,
-      "positions": 8
+      "positions": 8,
+      "expectedSellPrice": "82741.96"
     },
     {
       "type": "卖出",
@@ -1763,7 +1876,8 @@
       "timestamp": "2025-02-28T01:30:00.000Z",
       "price": "81474.28",
       "amount": 1000,
-      "positions": 7
+      "positions": 7,
+      "expectedSellPrice": "81881.65"
     },
     {
       "type": "卖出",
@@ -1779,14 +1893,16 @@
       "timestamp": "2025-02-28T02:30:00.000Z",
       "price": "80311.95",
       "amount": 1000,
-      "positions": 7
+      "positions": 7,
+      "expectedSellPrice": "80713.51"
     },
     {
       "type": "买入",
       "timestamp": "2025-02-28T02:45:00.000Z",
       "price": "79799.91",
       "amount": 1000,
-      "positions": 8
+      "positions": 8,
+      "expectedSellPrice": "80198.91"
     },
     {
       "type": "卖出",
@@ -1811,7 +1927,8 @@
       "timestamp": "2025-02-28T05:50:00.000Z",
       "price": "79387.99",
       "amount": 1000,
-      "positions": 7
+      "positions": 7,
+      "expectedSellPrice": "79784.93"
     },
     {
       "type": "卖出",
@@ -1827,7 +1944,8 @@
       "timestamp": "2025-02-28T08:10:00.000Z",
       "price": "78786.02",
       "amount": 1000,
-      "positions": 7
+      "positions": 7,
+      "expectedSellPrice": "79179.95"
     },
     {
       "type": "卖出",
@@ -1844,8 +1962,8 @@
       "price": "91611.90",
       "amount": 1000,
       "positions": 5,
-      "profit": "7.41",
-      "buyPrice": "90938.05"
+      "profit": "21.66",
+      "buyPrice": "89670.00"
     },
     {
       "type": "卖出",
@@ -1858,12 +1976,12 @@
     },
     {
       "type": "卖出",
-      "timestamp": "2025-03-02T16:45:00.000Z",
-      "price": "91134.01",
+      "timestamp": "2025-03-02T16:50:00.000Z",
+      "price": "91755.99",
       "amount": 1000,
       "positions": 3,
-      "profit": "16.33",
-      "buyPrice": "89670.00"
+      "profit": "8.99",
+      "buyPrice": "90938.05"
     },
     {
       "type": "卖出",
@@ -1871,8 +1989,8 @@
       "price": "93797.05",
       "amount": 1000,
       "positions": 2,
-      "profit": "7.11",
-      "buyPrice": "93135.00"
+      "profit": "12.52",
+      "buyPrice": "92637.53"
     },
     {
       "type": "卖出",
@@ -1880,15 +1998,16 @@
       "price": "94600.00",
       "amount": 1000,
       "positions": 1,
-      "profit": "21.18",
-      "buyPrice": "92637.53"
+      "profit": "15.73",
+      "buyPrice": "93135.00"
     },
     {
       "type": "买入",
       "timestamp": "2025-03-10T18:05:00.000Z",
       "price": "78294.44",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "78685.91"
     },
     {
       "type": "卖出",
@@ -1904,7 +2023,8 @@
       "timestamp": "2025-03-10T18:50:00.000Z",
       "price": "77840.00",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "78229.20"
     },
     {
       "type": "卖出",
@@ -1920,14 +2040,16 @@
       "timestamp": "2025-03-11T00:25:00.000Z",
       "price": "77309.01",
       "amount": 1000,
-      "positions": 2
+      "positions": 2,
+      "expectedSellPrice": "77695.56"
     },
     {
       "type": "买入",
       "timestamp": "2025-03-11T00:40:00.000Z",
       "price": "76814.75",
       "amount": 1000,
-      "positions": 3
+      "positions": 3,
+      "expectedSellPrice": "77198.82"
     },
     {
       "type": "卖出",
