@@ -14,12 +14,12 @@ function loadKlinesData() {
 }
 
 // 回测函数
-function runBacktest(klines, startIndex = 0, initialCapital = 10000, previousTrades = [], previousStats = null) {
+function runBacktest(klines, startIndex = 0, initialCapital = 2000, previousTrades = [], previousStats = null) {
   // 初始化参数
-  const positionSize = 10000; // 每次开仓金额
-  const maxPositions = 10; // 最大持仓数量
+  const positionSize = 400; // 每次开仓金额
+  const maxPositions = 50; // 最大持仓数量
   const priceChangeThreshold = 0.01; // 1%的价格变动阈值
-  const stopLossThreshold = 0.95; // 止损阈值，价格低于均价的90%时止损
+  const stopLossThreshold = 0.9; // 止损阈值，价格低于均价的90%时止损
   const tradeFeeRate = 0.0005; // 交易手续费率，0.05%
 
   // 交易状态
@@ -67,7 +67,7 @@ function runBacktest(klines, startIndex = 0, initialCapital = 10000, previousTra
       // 实际开仓
       const buyPrice = closePrice; // 使用收盘价作为实际买入价格
       const expectedSellPrice = buyPrice * (1 + priceChangeThreshold); // 计算预期平仓价格
-      
+
       // 计算买入手续费
       const buyFee = positionSize * tradeFeeRate;
       totalFeesPaid += buyFee;
@@ -110,7 +110,7 @@ function runBacktest(klines, startIndex = 0, initialCapital = 10000, previousTra
         if (closePrice >= position.expectedSellPrice) {
           // 使用收盘价作为卖出价格
           const sellPrice = closePrice;
-          
+
           // 计算卖出手续费
           const sellFee = positionSize * tradeFeeRate;
           totalFeesPaid += sellFee;
@@ -122,7 +122,7 @@ function runBacktest(klines, startIndex = 0, initialCapital = 10000, previousTra
           // 计算收益（扣除手续费）
           const profit = positionSize * (sellPrice / position.buyPrice - 1) - sellFee;
           totalValue += profit;
-          
+
           // 累计平仓收益
           totalProfitFromSell += profit;
 
@@ -143,6 +143,10 @@ function runBacktest(klines, startIndex = 0, initialCapital = 10000, previousTra
           // 从仓位数组中移除这个仓位
           positions.splice(j, 1);
 
+          // 更新标记价格和预期开仓价格
+          markPrice = closePrice;
+          expectedBuyPrice = markPrice * (1 - priceChangeThreshold);
+
           // 一次只平一个仓位，找到满足条件的第一个仓位后就退出循环
           break;
         }
@@ -156,33 +160,33 @@ function runBacktest(klines, startIndex = 0, initialCapital = 10000, previousTra
           totalBuyPrice += position.buyPrice;
         });
         const averagePrice = totalBuyPrice / positions.length;
-        
+
         // 检查收盘价是否低于均价的止损阈值
         if (closePrice < averagePrice * stopLossThreshold) {
           console.log(`触发止损: 均价=${averagePrice.toFixed(2)}, 当前价格=${closePrice.toFixed(2)}, 低于均价的${(stopLossThreshold * 100).toFixed(0)}%`);
-          
+
           // 计算止损金额和手续费
           let totalLoss = 0;
           let stopLossFees = 0;
-          
+
           positions.forEach(position => {
             // 每个仓位的卖出手续费
             const positionSellFee = positionSize * tradeFeeRate;
             stopLossFees += positionSellFee;
-            
+
             // 计算每个仓位的亏损（包括手续费）
             const loss = positionSize * (closePrice / position.buyPrice - 1) - positionSellFee;
             totalLoss += loss;
           });
-          
+
           // 更新总资产价值和总手续费
           totalValue += totalLoss;
           totalFeesPaid += stopLossFees;
           stopLossAmount = totalLoss;
-          
+
           // 累计止损亏损（负值）
           totalLossFromStopLoss += totalLoss;
-          
+
           // 记录止损交易
           trades.push({
             type: '止损',
@@ -193,20 +197,20 @@ function runBacktest(klines, startIndex = 0, initialCapital = 10000, previousTra
             averagePrice: averagePrice.toFixed(2),
             loss: totalLoss.toFixed(2)
           });
-          
+
           console.log(`止损完成: 持仓数量=${currentPositions}, 止损金额=${totalLoss.toFixed(2)}, 手续费=${stopLossFees.toFixed(2)}, 当前总资产=${totalValue.toFixed(2)}`);
-          
+
           // 标记止损触发
           stopLossTrigger = true;
           stopLossIndex = i + 1; // 从下一根K线开始重新回测
-          
+
           break; // 退出K线循环
         }
       }
     }
 
-    // 只有当收盘价大于标记价格时，才更新标记价格和预期开仓价格
-    if (closePrice > markPrice) {
+    // 只有当仓位是0，且收盘价大于标记价格时，才更新标记价格和预期开仓价格
+    if (currentPositions === 0 && closePrice > markPrice) {
       markPrice = closePrice;
       expectedBuyPrice = markPrice * (1 - priceChangeThreshold);
     }
@@ -215,14 +219,14 @@ function runBacktest(klines, startIndex = 0, initialCapital = 10000, previousTra
   // 如果触发了止损，从止损点继续回测
   if (stopLossTrigger && stopLossIndex < klines.length) {
     console.log(`从K线索引 ${stopLossIndex} 重新开始回测`);
-    
+
     // 传递收益统计数据
     const stats = {
       totalProfitFromSell,
       totalLossFromStopLoss,
       totalFeesPaid
     };
-    
+
     return runBacktest(klines, stopLossIndex, totalValue, trades, stats);
   }
 
@@ -243,10 +247,10 @@ function runBacktest(klines, startIndex = 0, initialCapital = 10000, previousTra
 
   // 返回回测结果
   return {
-    initialCapital: 10000, // 始终显示最初的初始资金
+    initialCapital: initialCapital, // 始终显示最初的初始资金
     finalValue: totalValue,
-    profit: totalValue - 10000, // 与最初的初始资金比较
-    profitPercent: ((totalValue / 10000 - 1) * 100).toFixed(2) + '%',
+    profit: totalValue - initialCapital, // 与最初的初始资金比较
+    profitPercent: ((totalValue / initialCapital - 1) * 100).toFixed(2) + '%',
     trades,
     remainingPositions: currentPositions,
     stopLossTimes: trades.filter(t => t.type === '止损').length,

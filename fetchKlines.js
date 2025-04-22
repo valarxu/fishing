@@ -8,7 +8,7 @@ const BINANCE_API = 'https://api.binance.com';
 const SYMBOL = 'BTCUSDT';
 const INTERVAL = '5m';
 const LIMIT = 1000; // 每次请求的最大数量
-const TOTAL_KLINES = 90000; // 需要获取的总K线数量
+const TOTAL_KLINES = 104000; // 需要获取的总K线数量
 const PROXY = 'http://127.0.0.1:4780';
 
 // 默认结束时间：2025年4月1日
