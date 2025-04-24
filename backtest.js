@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { saveOpenPositions } = require('./save_open_positions');
 
 // 读取K线数据
 function loadKlinesData() {
@@ -253,6 +254,7 @@ function runBacktest(klines, startIndex = 0, initialCapital = 2000, previousTrad
     profitPercent: ((totalValue / initialCapital - 1) * 100).toFixed(2) + '%',
     trades,
     remainingPositions: currentPositions,
+    openPositions: positions, // 添加未平仓的仓位数组
     stopLossTimes: trades.filter(t => t.type === '止损').length,
     totalProfitFromSell,
     totalLossFromStopLoss,
@@ -283,6 +285,19 @@ function main() {
   const resultPath = path.join(__dirname, 'backtest_result.json');
   fs.writeFileSync(resultPath, JSON.stringify(result, null, 2));
   console.log(`回测结果已保存到 ${resultPath}`);
+  
+  // 如果有未平仓仓位，保存到单独的文件
+  if (result.openPositions && result.openPositions.length > 0) {
+    const openPositionsPath = path.join(__dirname, 'open_positions.json');
+    fs.writeFileSync(openPositionsPath, JSON.stringify(result.openPositions, null, 2));
+    console.log(`未平仓仓位已保存到 ${openPositionsPath}`);
+    
+    // 获取最后一根K线的收盘价
+    const lastPrice = parseFloat(klines[klines.length - 1][4]);
+    
+    // 调用saveOpenPositions保存详细的未平仓信息
+    saveOpenPositions(result.openPositions, lastPrice);
+  }
 }
 
 // 执行主函数

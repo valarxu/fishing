@@ -1,0 +1,190 @@
+{
+  "timestamp": "2025-04-24T12:28:29.295Z",
+  "lastPrice": 84502.19,
+  "totalPositions": 20,
+  "totalPositionValue": 8000,
+  "totalUnrealizedProfit": -928.3648337775738,
+  "averageBuyPrice": 96079.98499999999,
+  "positions": [
+    {
+      "positionId": 1,
+      "buyPrice": 107373.15,
+      "expectedSellPrice": 108446.88149999999,
+      "currentPrice": 84502.19,
+      "unrealizedProfit": -85.20178461747649,
+      "profitPercent": "-21.30%",
+      "positionSize": 400
+    },
+    {
+      "positionId": 2,
+      "buyPrice": 106072,
+      "expectedSellPrice": 107132.72,
+      "currentPrice": 84502.19,
+      "unrealizedProfit": -81.34025944641374,
+      "profitPercent": "-20.34%",
+      "positionSize": 400
+    },
+    {
+      "positionId": 3,
+      "buyPrice": 105205.11,
+      "expectedSellPrice": 106257.1611,
+      "currentPrice": 84502.19,
+      "unrealizedProfit": -78.71450350653117,
+      "profitPercent": "-19.68%",
+      "positionSize": 400
+    },
+    {
+      "positionId": 4,
+      "buyPrice": 103514.02,
+      "expectedSellPrice": 104549.1602,
+      "currentPrice": 84502.19,
+      "unrealizedProfit": -73.46571990924514,
+      "profitPercent": "-18.37%",
+      "positionSize": 400
+    },
+    {
+      "positionId": 5,
+      "buyPrice": 102344.76,
+      "expectedSellPrice": 103368.2076,
+      "currentPrice": 84502.19,
+      "unrealizedProfit": -69.7351579113576,
+      "profitPercent": "-17.43%",
+      "positionSize": 400
+    },
+    {
+      "positionId": 6,
+      "buyPrice": 101292.83,
+      "expectedSellPrice": 102305.7583,
+      "currentPrice": 84502.19,
+      "unrealizedProfit": -66.30534461323667,
+      "profitPercent": "-16.58%",
+      "positionSize": 400
+    },
+    {
+      "positionId": 7,
+      "buyPrice": 100223.86,
+      "expectedSellPrice": 101226.0986,
+      "currentPrice": 84502.19,
+      "unrealizedProfit": -62.74621632014572,
+      "profitPercent": "-15.69%",
+      "positionSize": 400
+    },
+    {
+      "positionId": 8,
+      "buyPrice": 98875,
+      "expectedSellPrice": 99863.75,
+      "currentPrice": 84502.19,
+      "unrealizedProfit": -58.14537547408345,
+      "profitPercent": "-14.54%",
+      "positionSize": 400
+    },
+    {
+      "positionId": 9,
+      "buyPrice": 97833.91,
+      "expectedSellPrice": 98812.2491,
+      "currentPrice": 84502.19,
+      "unrealizedProfit": -54.507562868539154,
+      "profitPercent": "-13.63%",
+      "positionSize": 400
+    },
+    {
+      "positionId": 10,
+      "buyPrice": 96812.62,
+      "expectedSellPrice": 97780.7462,
+      "currentPrice": 84502.19,
+      "unrealizedProfit": -50.86291435971879,
+      "profitPercent": "-12.72%",
+      "positionSize": 400
+    },
+    {
+      "positionId": 11,
+      "buyPrice": 95593.89,
+      "expectedSellPrice": 96549.8289,
+      "currentPrice": 84502.19,
+      "unrealizedProfit": -46.41175288504318,
+      "profitPercent": "-11.60%",
+      "positionSize": 400
+    },
+    {
+      "positionId": 12,
+      "buyPrice": 94416.21,
+      "expectedSellPrice": 95360.37210000001,
+      "currentPrice": 84502.19,
+      "unrealizedProfit": -42.00134701445863,
+      "profitPercent": "-10.50%",
+      "positionSize": 400
+    },
+    {
+      "positionId": 13,
+      "buyPrice": 93469.64,
+      "expectedSellPrice": 94404.3364,
+      "currentPrice": 84502.19,
+      "unrealizedProfit": -38.37588333495239,
+      "profitPercent": "-9.59%",
+      "positionSize": 400
+    },
+    {
+      "positionId": 14,
+      "buyPrice": 91638.13,
+      "expectedSellPrice": 92554.5113,
+      "currentPrice": 84502.19,
+      "unrealizedProfit": -31.148344035392263,
+      "profitPercent": "-7.79%",
+      "positionSize": 400
+    },
+    {
+      "positionId": 15,
+      "buyPrice": 90709.65,
+      "expectedSellPrice": 91616.7465,
+      "currentPrice": 84502.19,
+      "unrealizedProfit": -27.372875983977394,
+      "profitPercent": "-6.84%",
+      "positionSize": 400
+    },
+    {
+      "positionId": 16,
+      "buyPrice": 89622,
+      "expectedSellPrice": 90518.22,
+      "currentPrice": 84502.19,
+      "unrealizedProfit": -22.850683983843247,
+      "profitPercent": "-5.71%",
+      "positionSize": 400
+    },
+    {
+      "positionId": 17,
+      "buyPrice": 88562.24,
+      "expectedSellPrice": 89447.86240000001,
+      "currentPrice": 84502.19,
+      "unrealizedProfit": -18.337612056786277,
+      "profitPercent": "-4.58%",
+      "positionSize": 400
+    },
+    {
+      "positionId": 18,
+      "buyPrice": 87587.49,
+      "expectedSellPrice": 88463.3649,
+      "currentPrice": 84502.19,
+      "unrealizedProfit": -14.090140041688626,
+      "profitPercent": "-3.52%",
+      "positionSize": 400
+    },
+    {
+      "positionId": 19,
+      "buyPrice": 85892.64,
+      "expectedSellPrice": 86751.5664,
+      "currentPrice": 84502.19,
+      "unrealizedProfit": -6.475292877247663,
+      "profitPercent": "-1.62%",
+      "positionSize": 400
+    },
+    {
+      "positionId": 20,
+      "buyPrice": 84560.55,
+      "expectedSellPrice": 85406.15550000001,
+      "currentPrice": 84502.19,
+      "unrealizedProfit": -0.2760625374361947,
+      "profitPercent": "-0.07%",
+      "positionSize": 400
+    }
+  ]
+}

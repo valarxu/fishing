@@ -17381,6 +17381,88 @@
     }
   ],
   "remainingPositions": 20,
+  "openPositions": [
+    {
+      "buyPrice": 107373.15,
+      "expectedSellPrice": 108446.88149999999
+    },
+    {
+      "buyPrice": 106072,
+      "expectedSellPrice": 107132.72
+    },
+    {
+      "buyPrice": 105205.11,
+      "expectedSellPrice": 106257.1611
+    },
+    {
+      "buyPrice": 103514.02,
+      "expectedSellPrice": 104549.1602
+    },
+    {
+      "buyPrice": 102344.76,
+      "expectedSellPrice": 103368.2076
+    },
+    {
+      "buyPrice": 101292.83,
+      "expectedSellPrice": 102305.7583
+    },
+    {
+      "buyPrice": 100223.86,
+      "expectedSellPrice": 101226.0986
+    },
+    {
+      "buyPrice": 98875,
+      "expectedSellPrice": 99863.75
+    },
+    {
+      "buyPrice": 97833.91,
+      "expectedSellPrice": 98812.2491
+    },
+    {
+      "buyPrice": 96812.62,
+      "expectedSellPrice": 97780.7462
+    },
+    {
+      "buyPrice": 95593.89,
+      "expectedSellPrice": 96549.8289
+    },
+    {
+      "buyPrice": 94416.21,
+      "expectedSellPrice": 95360.37210000001
+    },
+    {
+      "buyPrice": 93469.64,
+      "expectedSellPrice": 94404.3364
+    },
+    {
+      "buyPrice": 91638.13,
+      "expectedSellPrice": 92554.5113
+    },
+    {
+      "buyPrice": 90709.65,
+      "expectedSellPrice": 91616.7465
+    },
+    {
+      "buyPrice": 89622,
+      "expectedSellPrice": 90518.22
+    },
+    {
+      "buyPrice": 88562.24,
+      "expectedSellPrice": 89447.86240000001
+    },
+    {
+      "buyPrice": 87587.49,
+      "expectedSellPrice": 88463.3649
+    },
+    {
+      "buyPrice": 85892.64,
+      "expectedSellPrice": 86751.5664
+    },
+    {
+      "buyPrice": 84560.55,
+      "expectedSellPrice": 85406.15550000001
+    }
+  ],
   "stopLossTimes": 0,
   "totalProfitFromSell": 4076.801893195284,
   "totalLossFromStopLoss": 0,
