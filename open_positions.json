@@ -1,82 +1,126 @@
 [
   {
-    "buyPrice": 107373.15,
-    "expectedSellPrice": 108446.88149999999
+    "buyPrice": 108332.46,
+    "expectedSellPrice": 108874.12229999999
   },
   {
-    "buyPrice": 106072,
-    "expectedSellPrice": 107132.72
+    "buyPrice": 107486.02,
+    "expectedSellPrice": 108023.45009999999
   },
   {
-    "buyPrice": 105205.11,
-    "expectedSellPrice": 106257.1611
+    "buyPrice": 106908.28,
+    "expectedSellPrice": 107442.82139999999
   },
   {
     "buyPrice": 103514.02,
-    "expectedSellPrice": 104549.1602
+    "expectedSellPrice": 104031.59009999999
   },
   {
-    "buyPrice": 102344.76,
-    "expectedSellPrice": 103368.2076
+    "buyPrice": 102675.2,
+    "expectedSellPrice": 103188.57599999999
   },
   {
-    "buyPrice": 101292.83,
-    "expectedSellPrice": 102305.7583
+    "buyPrice": 102041.15,
+    "expectedSellPrice": 102551.35574999999
   },
   {
-    "buyPrice": 100223.86,
-    "expectedSellPrice": 101226.0986
+    "buyPrice": 101756,
+    "expectedSellPrice": 102264.77999999998
   },
   {
-    "buyPrice": 98875,
-    "expectedSellPrice": 99863.75
+    "buyPrice": 101164.71,
+    "expectedSellPrice": 101670.53355
   },
   {
-    "buyPrice": 97833.91,
-    "expectedSellPrice": 98812.2491
+    "buyPrice": 100638.53,
+    "expectedSellPrice": 101141.72264999998
   },
   {
-    "buyPrice": 96812.62,
-    "expectedSellPrice": 97780.7462
+    "buyPrice": 99586.25,
+    "expectedSellPrice": 100084.18125
   },
   {
-    "buyPrice": 95593.89,
-    "expectedSellPrice": 96549.8289
+    "buyPrice": 98761.99,
+    "expectedSellPrice": 99255.79995
   },
   {
-    "buyPrice": 94416.21,
-    "expectedSellPrice": 95360.37210000001
+    "buyPrice": 98216.01,
+    "expectedSellPrice": 98707.09004999998
+  },
+  {
+    "buyPrice": 97624.24,
+    "expectedSellPrice": 98112.3612
+  },
+  {
+    "buyPrice": 97132.08,
+    "expectedSellPrice": 97617.7404
+  },
+  {
+    "buyPrice": 96543.52,
+    "expectedSellPrice": 97026.2376
+  },
+  {
+    "buyPrice": 95966.41,
+    "expectedSellPrice": 96446.24204999999
+  },
+  {
+    "buyPrice": 95412.01,
+    "expectedSellPrice": 95889.07004999998
+  },
+  {
+    "buyPrice": 94821.99,
+    "expectedSellPrice": 95296.09994999999
+  },
+  {
+    "buyPrice": 94441.06,
+    "expectedSellPrice": 94913.26529999998
+  },
+  {
+    "buyPrice": 93981.12,
+    "expectedSellPrice": 94451.02559999998
   },
   {
     "buyPrice": 93469.64,
-    "expectedSellPrice": 94404.3364
+    "expectedSellPrice": 93936.98819999999
+  },
+  {
+    "buyPrice": 93074.4,
+    "expectedSellPrice": 93539.77199999998
   },
   {
     "buyPrice": 91638.13,
-    "expectedSellPrice": 92554.5113
+    "expectedSellPrice": 92096.32065
   },
   {
-    "buyPrice": 90709.65,
-    "expectedSellPrice": 91616.7465
+    "buyPrice": 91123.15,
+    "expectedSellPrice": 91578.76574999999
   },
   {
-    "buyPrice": 89622,
-    "expectedSellPrice": 90518.22
+    "buyPrice": 90022.06,
+    "expectedSellPrice": 90472.17029999998
   },
   {
-    "buyPrice": 88562.24,
-    "expectedSellPrice": 89447.86240000001
+    "buyPrice": 89211.47,
+    "expectedSellPrice": 89657.52734999999
   },
   {
-    "buyPrice": 87587.49,
-    "expectedSellPrice": 88463.3649
+    "buyPrice": 88669.99,
+    "expectedSellPrice": 89113.33995
+  },
+  {
+    "buyPrice": 88000,
+    "expectedSellPrice": 88439.99999999999
+  },
+  {
+    "buyPrice": 87489.62,
+    "expectedSellPrice": 87927.06809999999
   },
   {
     "buyPrice": 85892.64,
-    "expectedSellPrice": 86751.5664
+    "expectedSellPrice": 86322.10319999998
   },
   {
-    "buyPrice": 84560.55,
-    "expectedSellPrice": 85406.15550000001
+    "buyPrice": 84801.88,
+    "expectedSellPrice": 85225.8894
   }
 ]

@@ -18,8 +18,8 @@ function loadKlinesData() {
 function runBacktest(klines, startIndex = 0, initialCapital = 2000, previousTrades = [], previousStats = null) {
   // 初始化参数
   const positionSize = 400; // 每次开仓金额
-  const maxPositions = 50; // 最大持仓数量
-  const priceChangeThreshold = 0.01; // 1%的价格变动阈值
+  const maxPositions = 100; // 最大持仓数量
+  const priceChangeThreshold = 0.005; // 1%的价格变动阈值
   const stopLossThreshold = 0.9; // 止损阈值，价格低于均价的90%时止损
   const tradeFeeRate = 0.0005; // 交易手续费率，0.05%
 
