@@ -20,6 +20,7 @@ function runBacktest(klines, startIndex = 0, initialCapital = 2000, previousTrad
   const positionSize = 400; // 每次开仓金额
   const maxPositions = 100; // 最大持仓数量
   const priceChangeThreshold = 0.005; // 1%的价格变动阈值
+  const priceSellThreshold = 0.01; // 1%的价格变动阈值
   const stopLossThreshold = 0.9; // 止损阈值，价格低于均价的90%时止损
   const tradeFeeRate = 0.0005; // 交易手续费率，0.05%
 
@@ -67,7 +68,7 @@ function runBacktest(klines, startIndex = 0, initialCapital = 2000, previousTrad
     if (closePrice <= expectedBuyPrice && currentPositions < maxPositions) {
       // 实际开仓
       const buyPrice = closePrice; // 使用收盘价作为实际买入价格
-      const expectedSellPrice = buyPrice * (1 + priceChangeThreshold); // 计算预期平仓价格
+      const expectedSellPrice = buyPrice * (1 + priceSellThreshold); // 计算预期平仓价格
 
       // 计算买入手续费
       const buyFee = positionSize * tradeFeeRate;
